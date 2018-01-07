@@ -2,13 +2,13 @@
 
 	/* Contact Form Setup Begin */
 
-	$send_name      = "Eventr";		// Replace your name
-	$send_title     = "Eventr Register";		// Replace email sent title
-	$send_address   = "name@domain.com";	// Replace your email address
+	$send_name      = "Spencer";		// Replace your name
+	$send_title     = "Work with Spencer";		// Replace email sent title
+	$send_address   = "spencer.lynch@workwithspencer.com";	// Replace your email address
 	
-	$smtp_address   = "mail@domain";		// Replace your email address
-	$smtp_password	= "123456";				// Replace your email password
-	$smtp_server	= "mail.domain.com";	// Replace your email server address
+	$smtp_address   = "spencer.lynch@workwithspencer.com";		// Replace your email address
+	$smtp_password	= "12345";				// Replace your email password
+	$smtp_server	= "workwithspencer.com";	// Replace your email server address
 	
 	/* Contact Form Setup End */
 
