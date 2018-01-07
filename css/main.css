@@ -84,7 +84,7 @@ a {
 }
 
 .owl-theme .owl-controls .owl-page span {
-	background:#fac42b;
+	background:#5b4863;
 }
 
 
@@ -110,18 +110,18 @@ a {
 }
 
 .navbar-custom .navbar-nav > li > a:hover {
-	color:#fac42b;
+	color:#5b4863;
 	background:transparent;
 }
 
 .navbar-custom .navbar-nav > li > a:active,
 .navbar-custom .navbar-nav > li > a:focus {
-	color:#fac42b;
+	color:#5b4863;
 	background:transparent;
 }
 
 .navbar-custom .icon-bar {
-	background:#fac42b;
+	background:#5b4863;
 }
 
 .sticky-wrapper {
@@ -150,7 +150,10 @@ a {
 /* navbar effect */
 
 .navbar-custom a {
-	padding: 8px 0;
+	font-size: 24px;
+	display: inline-block;
+	vertical-align: middle;
+	line-height: normal;
 }
 
 .logo.navbar-custom{
@@ -201,7 +204,7 @@ a {
 }
 
 #highlight #right {
-	background:#fac42b;
+	background:#5b4863;
 	min-height:100px;
 }
 
@@ -234,7 +237,7 @@ a {
 }
 
 #info i {
-	color:#fac42b;
+	color:#5b4863;
 	margin-bottom:10px;
 }
 
@@ -299,7 +302,7 @@ a {
   	width: 40px;
   	height: 2px;
 	margin:0 auto;
- 	background-color: #fac42b;
+ 	background-color: #5b4863;
  	margin-top: 10px;
   	margin-bottom: 5px;
 }
@@ -407,7 +410,7 @@ a {
 
 #program {
 	color:#ffffff;
-	background:#fac42b;
+	background:#5b4863;
 	padding:70px 0 90px 0;
 }
 
@@ -562,7 +565,7 @@ a {
   	display: block;
   	width: 120px;
   	height: 3px;
- 	background-color: #fac42b;
+ 	background-color: #5b4863;
  	margin-top: 12px;
   	margin-bottom: 15px;
 }
@@ -606,7 +609,7 @@ a {
   	display: block;
   	width: 60px;
   	height: 3px;
- 	background-color: #fac42b;
+ 	background-color: #5b4863;
  	margin-top: 12px;
   	margin-bottom: 15px;
 }
@@ -620,7 +623,7 @@ a {
   	display: block;
   	width: 60px;
   	height: 3px;
- 	background-color: #fac42b;
+ 	background-color: #5b4863;
  	margin-top: 12px;
   	margin-bottom: 15px;
 }
@@ -630,7 +633,7 @@ a {
 }
 
 #venue i {
-	color:#fac42b;
+	color:#5b4863;
 }
 
 .venue-inner .lead {
@@ -739,7 +742,7 @@ a {
 
 .price-table {
 	color:#ffffff;
-	background:#fac42b;
+	background:#5b4863;
 	padding:20px;
 	line-height:1;
 	font-weight:300;
@@ -748,7 +751,7 @@ a {
 }
 
 .early-bird {
-	background:#fac42b;
+	background:#5b4863;
 }
 
 .standart {
@@ -831,7 +834,7 @@ a {
 /* TESTIMONIAL */
 
 #testimonial {
-	background:#fac42b;
+	background:#5b4863;
 	background-image: url(../img/bg-testimonial.png);
 	background-repeat: no-repeat;
 	background-attachment:fixed;
@@ -879,7 +882,7 @@ a {
 }
 
 .sponsor {
-	border:2px solid #fac42b;
+	border:2px solid #5b4863;
 	margin:0 5px;
 	padding:10px;
 	text-align:center;
@@ -894,7 +897,7 @@ a {
 } 
 
 #sponsors i {
-	color:#fac42b;
+	color:#5b4863;
 }
 
 
@@ -930,7 +933,7 @@ footer h4:after {
   	display: block;
   	width: 60px;
   	height: 3px;
- 	background-color: #fac42b;
+ 	background-color: #5b4863;
  	margin-top: 12px;
   	margin-bottom: 15px;
 }
@@ -1083,7 +1086,7 @@ textarea {
 /* PRELOAD */
 
 #preload {
-	background:#fac42b;
+	background:#5b4863;
 	position: fixed;
 	top:0;
 	left:0;
@@ -1131,7 +1134,7 @@ textarea {
 /* OWL CAROUSEL */
 
 .owl-theme .owl-controls .owl-buttons div {
-	color: #fac42b;
+	color: #5b4863;
 	margin:0;
 	padding: 1px;
 	font-size: 12px;
