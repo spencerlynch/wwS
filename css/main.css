@@ -3,15 +3,9 @@
 
 	1. CORE CSS
 	2. NAVBAR
-	3. HIGHLIGHT 
 	4. INFO 
 	5. PROJECTS
-	6. PROGRAM
 	7. DOWNLOAD
-	8. VENUE
-	5. SPEAKERS
-	9. FUNFACTS
-	10. REGISTER
 	11. GALLERY
 	12. TESTIMONIAL
 	14. FOOTER
@@ -95,7 +89,7 @@ a {
 	font-size:12px;
 	font-weight:400;
 	letter-spacing:1px;
-	background:transparent;
+	background:#262626;
 	margin-bottom:0;
 	border-radius:0;
 	z-index:1041;
@@ -103,10 +97,6 @@ a {
 	-webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
   -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
   transition: background .5s ease-in-out,padding .5s ease-in-out;
-}
-
-.navbar-custom a {
-	color:#333333;
 }
 
 .navbar-custom .navbar-nav > li > a:hover {
@@ -127,7 +117,7 @@ a {
 .sticky-wrapper {
 	position:absolute;
 	width:100%;
-	padding-top:30px;
+	/*padding-top:30px;*/
 }
 
 .sticky-wrapper a {
@@ -148,17 +138,16 @@ a {
 
 
 /* navbar effect */
-
+.navbar-custom li {
+	font-size: 18px;
+}
 .navbar-custom a {
 	font-size: 25px;
 	display: inline-block;
 	padding: 15px 0;
 	text-transform: uppercase;
 	font-weight: 800;
-}
-
-.logo.navbar-custom{
-	font-size: 24px;
+	text-decoration: none !important;
 }
 
 .navbar-custom .navbar-nav > li > a::after {
@@ -185,51 +174,6 @@ a {
 	-moz-transform: translateY(0px);
 	transform: translateY(0px);
 }
-
-
-/* HIGHLIGHT */
-
-#highlight {
-	padding:0px;
-}
-
-#highlight h2 {
-	color:#ffffff;
-	margin-bottom:0;
-}
-
-#highlight #left {
-	color:#b0b0b0;
-	background:#262626;
-	min-height:100px;
-}
-
-#highlight #right {
-	background:#5b4863;
-	min-height:100px;
-}
-
-#right #countdown {
-	margin:15px 0;
-}
-
-@media only screen and (max-width: 768px), only screen and (max-device-width: 768px) {
-
-#highlight #left {
-	background:none;
-	text-align:center;
-}
-
-#highlight h2 {
-	color:#262626;
-}
-
-#highlight #right {
-	background:none;
-}
-	
-}
-
 
 /* INFO */
 
@@ -300,85 +244,6 @@ a {
 	display:none; 
 }
 
-/* project detail */
-
-#project-detail {
-	background:#ffffff;
-	box-shadow: 0px 3px 5px rgba(0,0,0,.1);
-}
-
-#project-detail h2 {
-	font-family:'montserratregular';
-	margin-bottom:0;
-}
-
-#project-detail h2 span {
-	font-family:'montserratbold';
-}
-
-#project-detail img {
-	width:100%;
-	height:auto;
-}
-
-#project-detail .lead {
-	margin-bottom:10px;
-}
-
-#project-detail .social{
-	margin-bottom:10px;
-}
-
-#project-detail .social li{
-	padding-left:1px;
-}
-
-#project-detail .social li:first-child{
-	padding-left:5px;
-}
-
-#project-detail .social a {
-	opacity:0.8;
-	-webkit-transition: all 0.3s;
-	   -moz-transition: all 0.3s;
-			transition: all 0.3s;
-}
-
-#project-detail .social a:hover {
-	opacity:1;
-}
-
-#project-detail .social a .fa-facebook-square{
-	color:#3b5998;
-}
-
-#project-detail .social a .fa-twitter-square{
-	color:#00aced;
-}
-
-#project-detail .social a .fa-linkedin-square{
-	color:#007bb6;
-}
-
-#project-detail .social a .fa-google-plus-square{
-	color:#dd4b39;
-}
-
-#project-detail .mfp-close {
-	color:#ffffff;
-	background:#262626;
-	opacity:1;
-}
-
-#project-detail li {
-	padding-right:1px;
-}
-
-#project-detail #content {
-	height:230px;
-	margin-bottom:15px;
-} 
-
 /* DOWNLOAD */
 
 #download {
@@ -394,63 +259,6 @@ a {
  	margin-top: 12px;
   	margin-bottom: 15px;
 }
-
-/* FUNFACTS */
-
-#funfacts  {
-	background-image: url(../img/bg-funfacts.png);
-	background-repeat: no-repeat;
-	background-attachment:fixed;
-	background-position: center;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-moz-background-size: cover;
-	height:310px;
-	position:relative;
-	padding:0;
-}
-
-.funfacts-inner {
-	color:#ffffff;
-	background:rgba(0,0,0, 0.5);
-	position:absolute;
-	width:100%;
-	height:100%;
-}
-
-#funfacts .item {
-	margin:100px 0 0 0;
-	display:table;
-}
-
-#funfacts i {
-	float:left;
-	border-right:1px solid #ffffff;
-	padding:20px 20px 20px 0;
-}
-
-#funfacts .desc {
-	padding-left:20px;
-	display:table-cell;
-	vertical-align:middle;
-}
-
-#funfacts .number {
-	font-family:'montserratbold';
-	font-size:40px;
-	font-weight:700;
-	margin-top:15px;
-	margin-bottom:0;
-	line-height:1;
-}
-
-#funfacts .description {
-	font-size:12px;
-	font-weight:400;
-	letter-spacing:2px;
-	text-transform:uppercase;
-}
-
 
 /* GALLERY */
 
@@ -749,7 +557,7 @@ textarea {
 }
 
 .wrap .overlay:after {
-	background: none repeat scroll 0 0 rgba(250, 196, 43, 0.7);
+	background: none repeat scroll 0 0 rgba(72, 99, 78, 0.7);
 	height: 100%;
 	content:"";
 	display: block;
@@ -771,7 +579,7 @@ textarea {
 }
 
 .wrap .overlay:before {
-	background: none repeat scroll 0 0 rgba(250, 196, 43, 0.7);
+	background: none repeat scroll 0 0 rgba(72, 99, 78, 0.7);
 	bottom: -100%; 
 	height: 100%;
 	content:"";
@@ -826,6 +634,7 @@ textarea {
 	-o-transition: all 0.3s ease 0s;
 	transition: all 0.3s ease 0s;
 }
+
 /* bouncing arrow */
 .arrow {
 	text-align: center;
