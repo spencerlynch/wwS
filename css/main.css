@@ -275,7 +275,7 @@ a {
 
 #testimonial {
 	background:#5b4863;
-	background-image: url(img/blantons_bg.jpg);
+	background-image: url(../img/spray_cans_bg.jpg);
 	background-repeat: no-repeat;
 	background-attachment:fixed;
 	background-position: center;
@@ -469,21 +469,21 @@ textarea {
 
 .button-line-light:hover,
 .button-line-light:active {
-	color: #262626;
+	color: #e57000;
 	background: #ffffff;
 	text-decoration:none;
 }
 
 .button-line-dark {
-	color:#262626;
+	color:#e57000;
 	background:transparent;
-	border:2px solid #262626;
+	border:2px solid #e57000;
 }
 
 .button-line-dark:hover,
 .button-line-dark:active {
 	color: #ffffff;
-	background: #262626;
+	background: #e57000;
 	text-decoration:none;
 }
 
