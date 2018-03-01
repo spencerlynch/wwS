@@ -14,6 +14,14 @@
             gtag('config', 'UA-109503023-2');
         </script>
         
+        <script src="js/jquery-1.11.1.min.js"></script>
+
+        <script src="galleria/galleria-1.5.7.min.js"></script>
+
+        <script src="galleria/plugins/flickr/galleria.flickr.min.js"></script>
+
+
+        
         <title>Work with Spencer</title>
         
         <meta charset="utf-8">
@@ -81,7 +89,7 @@
             <div class="collapse navbar-collapse" id="nav">
               <ul class="nav navbar-nav navbar-right uppercase">
                 <li><a data-toggle="elementscroll" href="#download">About</a></li>
-                <li><a data-toggle="elementscroll" href="#info">Services</a></li>
+                <li><a data-toggle="elementscroll" href="#services">Services</a></li>
                 <li><a data-toggle="elementscroll" href="#projects">Projects</a></li>
                 <li><a data-toggle="elementscroll" href="#gallery">Gallery</a></li>
                 <li><a data-toggle="elementscroll" href="#footer">Contact</a></li>
@@ -153,8 +161,8 @@
             </div>
         </div>
 
-        <!-- INFO -->
-        <section id="info">
+        <!-- services -->
+        <section id="services">
             <div class="container">
                 <div class="row">
                     
@@ -298,7 +306,7 @@
                         <h2 class="uppercase">gallery</h2>
                         <p class="lead">A collection of moments I have captured, that portray my daily life. Some moments are big, and some are small, but all have significance. Prints are available for most images in my Gallery, inquire by email for details. </p>
                         
-                        <div id="timeline" data-columns>
+                        <!-- <div id="timeline" data-columns>
 
                             <div class="item wrap">
                                 <img class="img-responsive" src="img/watermarked/IMG_0379_200.jpg" alt="">
@@ -474,8 +482,31 @@
                                 <div class="icon">
                                     <a class="image-popup" href="img/watermarked/IMG_9317.jpg" title="<h4>Chimney-Top Rock</h4>"><i class="pe-3x pe-7s-plus"></i></a>
                                 </div>
-                            </div>
+                            </div> -->
+                        <div id="galleria" style="height: 500px;"></div>
 
+                            <script>
+                                $(document).ready(function(){
+
+                                Galleria.loadTheme('./galleria/themes/folio/galleria.folio.min.js');
+                                    $("#galleria").galleria({
+                                    responsive: true,
+                                    height: .57,
+                                    imageCrop: false,
+                                    thumbCrop: 'height',
+                                    carousel: false,
+                                    showInfo: true,
+                                    swipe: true,
+                                    easing: 'galleriaOut',
+                                    transition: 'pulse',
+                                    flickr: 'set:72157666149918298',
+                                    flickrOptions: {
+                                        max: 30
+                                    }
+                                });
+
+                            });
+                            </script>
                         </div>
                     </div>
                     
@@ -562,7 +593,6 @@
 
         
         <script src="js/jquery-1.11.1.min.js"></script>
-        <script type="text/javascript" src="http://maps.google.com/maps/api/js?sensor=false"></script>
         <script src="js/jquery.themepunch.tools.min.js"></script>
         <script src="js/jquery.themepunch.revolution.min.js"></script>
         <script src="js/bootstrap.min.js"></script>
@@ -575,7 +605,8 @@
         <script src="js/jquery.counterup.min.js"></script>
         <script src="js/owl.carousel.min.js"></script>
         <script src="js/retina.js"></script>
-        <script type="js/galleria-1.5.7.min.js"></script>
+        <script src="galleria/galleria-1.5.7.min.js"></script>
+        <script src="galleria/plugins/flickr/galleria.flickr.min.js"></script>
         
         <script src="js/main.js"></script>
         

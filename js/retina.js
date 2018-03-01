@@ -107,7 +107,7 @@
     };
 
     RetinaImagePath.prototype.check_2x_variant = function(callback) {
-        var http, that = this;
+        var https, that = this;
         if (this.is_external()) {
             return callback(false);
        // } else if (!this.perform_check && typeof this.at_2x_path !== 'undefined' && this.at_2x_path !== null) {
@@ -115,16 +115,16 @@
         } else if (this.at_2x_path in RetinaImagePath.confirmed_paths) {
             return callback(true);
         } else {
-            http = new XMLHttpRequest();
-            http.open('HEAD', this.at_2x_path);
-            http.onreadystatechange = function() {
-                if (http.readyState !== 4) {
+            https = new XMLHttpRequest();
+            https.open('HEAD', this.at_2x_path);
+            https.onreadystatechange = function() {
+                if (https.readyState !== 4) {
                     return callback(false);
                 }
 
-                if (http.status >= 200 && http.status <= 399) {
+                if (https.status >= 200 && https.status <= 399) {
                     if (config.check_mime_type) {
-                        var type = http.getResponseHeader('Content-Type');
+                        var type = https.getResponseHeader('Content-Type');
                         if (type === null || !type.match(/^image/i)) {
                             return callback(false);
                         }
@@ -136,7 +136,7 @@
                     return callback(false);
                 }
             };
-            http.send();
+            https.send();
         }
     };
 

@@ -96,23 +96,6 @@ jQuery(document).ready(function($) {
     	}
     	
     });  
-	 
-	  
-	//COUNTDOWN TIMER
-	var newYear = new Date(); 
-    newYear = new Date(newYear.getFullYear() + 1, 1 - 1, 1); 
-    $('#countdown').countdown({until: new Date(2015, 12-1, 18)}); // enter event day 
-    
-    $('#removeCountdown').toggle(
-        function() {
-            $(this).text('Re-attach'); 
-            $('#defaultCountdown').countdown('destroy'); 
-        }, 
-        function() { 
-            $(this).text('Remove'); 
-            $('#defaultCountdown').countdown({until: newYear}); 
-        }
-    );
 	  
 	
 	//MAGNIFIC POPUP LOAD CONTENT VIA AJAX
@@ -145,51 +128,6 @@ jQuery(document).ready(function($) {
         mouseleave : function(){ $(this).removeClass('hover'); }
     });
 	  
-	//OWLCAROUSEL HOTEL CAROUSEL
-	var owl = $("#hotel-carousel");
- 
-	  owl.owlCarousel({
-		  autoPlay: false,
-		  itemsCustom : [ [0, 1], [450, 1], [600, 3], [700, 3], [1000, 3], [1200, 3], [1600, 3] ],
-		  pagination : false,
-		  navigation : true,
-		  navigationText : ['<i class="pe-4x pe-7s-angle-left pe-border"></i>','<i class="pe-4x  pe-7s-angle-right pe-border"></i>'],
-	  });
-	  
-	//OWLCAROUSEL FUNFACT CAROUSEL
-	var owl = $("#funfacts-carousel");
- 
-	  owl.owlCarousel({
-		  itemsCustom : [
-			[0, 1],
-			[450, 1],
-			[600, 2],
-			[700, 4],
-			[1000, 4],
-			[1200, 4],
-			[1600, 4]
-		  ],
-		  navigation : false,
-		  navigationText : ['<i class="pe-4x pe-7s-angle-left pe-border"></i>','<i class="pe-4x  pe-7s-angle-right pe-border"></i>'],
-	  });
-	  
-	  //OWLCAROUSEL PRICE TABLE CAROUSEL
-	var owl = $("#price-carousel");
- 
-	  owl.owlCarousel({
-		  itemsCustom : [
-			[0, 1],
-			[450, 1],
-			[600, 2],
-			[700, 3],
-			[1000, 3],
-			[1200, 3],
-		  ],
-		  pagination : false,
-		  navigation : true,
-		  navigationText : ['<i class="pe-4x pe-7s-angle-left pe-border"></i>','<i class="pe-4x  pe-7s-angle-right pe-border"></i>'],
-	  });
-	
 	//OWLCAROUSEL TESTIMONIAL CAROUSEL
 	var owl = $("#testimonial-carousel");
  
@@ -200,33 +138,7 @@ jQuery(document).ready(function($) {
 		  singleItem:true,
 		  transitionStyle : "fade"
 	  });
-	
-	//OWLCAROUSEL SPONSORS CAROUSEL
-	var owl = $("#sponsors-carousel");
- 
-	  owl.owlCarousel({
-		  
-		  autoPlay: false,
-		  itemsCustom : [
-			[0, 1],
-			[450, 1],
-			[600, 3],
-			[700, 3],
-			[1000, 3],
-			[1200, 5],
-			[1600, 5]
-		  ],
-		  pagination : false,
-		  navigation : true,
-		  navigationText : ['<i class="pe-4x pe-7s-angle-left pe-border"></i>','<i class="pe-4x  pe-7s-angle-right pe-border"></i>'],
-	  });
-	
-	// FUNFACTS
-	 $('.number').counterUp({
-		delay: 10,
-		time: 3000
-	});
-	
+
 	//FIX HOVER EFFECT ON IOS DEVICES
 	document.addEventListener("touchstart", function(){}, true);
 
@@ -250,66 +162,3 @@ $(window).load(function(){
 
 });
 
-// REGISTER FORM FUNCTION
-var contact_send = function(){
-	
-	'use strict';
-	
-	var name  = $("#name").val();
-	var email = $("#email").val();
-	var phone = $("#phone").val();
-	var type  = $("#type").val();
-	
-		 if ( name=="" ){ alert("name area is empty!"); $("#name").focus(); }
-	else if ( email=="" ){ alert("email address area is empty!"); $("#email").focus(); }
-	else if ( phone=="" ){ alert("phone number area is empty!"); $("#phone").focus(); }
-	else if ( type=="" ){ alert("register type isn't selected!"); $("#type").focus(); }
-	else {
-		$.post("contact.send.php", { name:name, email:email, phone:phone, type:type }, function( result ){
-			if ( result=="SUCCESS" ){
-				alert("Your contact form is sent.");
-				setTimeout(function(){
-					$("#name").val("");
-					$("#email").val("");
-					$("#phone").val("");
-					$("#type").val("");
-				}, 3000);
-			} else {
-				alert("Your contact form isn't sent. Please check fields and try again.");
-			}
-		});
-	}
-
-};
-
-	/* NEWSLETTER FORM FUNCTION */
-	var newsletter_send = function(){
-	
-		'use strict';
-		
-		var email 	= $("#newsletter_email").val();
-		if ( email=="" ){ alert("Your email address is empty!"); $("#newsletter_email").focus(); }
-		else {
-			$.post("newsletter.send.php", { email:email }, function( result ){
-				
-				console.log( result );
-				
-				if ( result=="SUCCESS" ){
-					alert("Thank you. Your email is added to our database.");
-					setTimeout(function(){ $("#newsletter_email").val(""); }, 3000);
-				}
-				
-				else if ( result=="EXIST" ){
-					alert("Error. Your email address is already exist our database.");
-					$("#newsletter_email").focus();
-				}
-				
-				else {
-					alert("Error. Your email isn't added to our database.");
-					$("#newsletter_email").focus();
-				}
-				
-			});
-		}
-	
-	};

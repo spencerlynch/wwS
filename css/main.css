@@ -3,9 +3,9 @@
 
 	1. CORE CSS
 	2. NAVBAR
-	4. INFO 
+	4. SERVICES 
 	5. PROJECTS
-	7. DOWNLOAD
+	7. ABOUT
 	11. GALLERY
 	12. TESTIMONIAL
 	14. FOOTER
@@ -175,13 +175,13 @@ a {
 	transform: translateY(0px);
 }
 
-/* INFO */
+/* services */
 
-#info {
+#services {
 	padding:70px 0 90px 0;
 }
 
-#info i {
+#services i {
 	color:#5b4863;
 	margin-bottom:10px;
 }
@@ -244,13 +244,13 @@ a {
 	display:none; 
 }
 
-/* DOWNLOAD */
+/* about */
 
-#download {
+#about {
 	padding:90px 0 110px 0;
 }
 
-#download h3:after {
+#about h3:after {
 	content: "";
   	display: block;
   	width: 120px;
